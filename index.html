@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kanban</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <div class="tasks editor-container">
+            <h4 class="text-center ">Not started <button class="tasks__buttonshow">></button></h4>
+            <div class="tasks__list droppable " id="notstarted">
+            </div>
+            <div class="tasks__newtask">
+              <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="tasks editor-container">
+            <h4 class="text-center ">Ready <button class="tasks__buttonshow">></button></h4>
+            <div class="tasks__list droppable" id="ready">
+            </div>
+            <div class="tasks__newtask">
+              <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="tasks editor-container">
+            <h4 class="text-center ">In progress <button class="tasks__buttonshow">></button></h4>
+            <div class="tasks__list droppable" id="inprogress">
+            </div>
+            <div class="tasks__newtask">
+              <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="tasks editor-container">
+            <h4 class="text-center ">Under review <button class="tasks__buttonshow">></button></h4>
+            <div class="tasks__list droppable" id="underreview">
+            </div>
+            <div class="tasks__newtask">
+              <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modalbox">
+      <div class="modalbox__content">
+        <form>
+          <div class="form-group modalbox__header">
+            <input type="text" class="form-control" placeholder="Task name">
+          </div>
+          <div class="modalbox__forms">
+            <div class="form-group">
+              <label>Tags:</label>
+              <input type="text" class="form-control" placeholder="#">
+            </div>
+            <div class="row">
+              <div class="col-xs-2">
+                  <label>Label: </label>
+              </div>
+              <div class="col-xs-10 modalbox__radios ">
+                  <input class="modalbox__labels-hide" type="radio" id="radiored"  name="radiooption" value="0">
+                  <label for="radiored" class="modalbox__labels modalbox__labels-red radio-inline"></label>
+
+                  <input class="modalbox__labels-hide" type="radio" id="radioblue" name="radiooption" value="1">
+                  <label for="radioblue" class="modalbox__labels modalbox__labels-blue radio-inline"></label>
+
+                  <input class="modalbox__labels-hide" type="radio" id="radiogreen" name="radiooption" value="2">
+                  <label for="radiogreen" class="modalbox__labels modalbox__labels-green radio-inline"></label>
+
+                  <input class="modalbox__labels-hide" type="radio" id="radioorange" name="radiooption" value="3">
+                  <label for="radioorange" class="modalbox__labels modalbox__labels-orange radio-inline"></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Starts:</label>
+              <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+            </div>
+            <div class="form-group">
+              <label>Finishes:</label>
+              <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+            </div>
+            <div class="form-group">
+              <label>Adnotation:</label>
+              <textarea class="form-control" rows="4" placeholder="Some adnotations..."></textarea>
+            </div>
+            <div class="modalbox__buttons">
+              <button type="button" class="modalbox__savebtn btn btn-success">Save</button>
+              <button type="button" class="modalbox__cancelbtn btn btn-default">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  <script src="javascript/jquery-3.2.1.min.js"></script>
+  <script src="javascript/jquery-ui.min.js"></script>
+  <script src="javascript/kanbanVC.js"></script>
+  </body>
+</html>
