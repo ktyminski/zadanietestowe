@@ -32,6 +32,10 @@ body{
   color: #777;
 }
 
+.tasks__list{
+    min-height: 20px;
+}
+
 .tasks__list-task{
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -64,7 +68,6 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content/Box */
 .modalbox__content {
     background-color: #fefefe;
     margin: 5% auto;
