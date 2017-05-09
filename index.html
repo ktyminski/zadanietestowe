@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row" id="#sortable">
         <div class="col-sm-3 col-xs-6">
           <div class="tasks editor-container">
             <h4 class="text-center ">Not started <button class="tasks__buttonshow">></button></h4>
-            <div class="tasks__list droppable " id="notstarted">
+            <div class="tasks__list droppable items" id="notstarted">
             </div>
             <div class="tasks__newtask">
               <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
@@ -25,7 +25,7 @@
         <div class="col-sm-3 col-xs-6">
           <div class="tasks editor-container">
             <h4 class="text-center ">Ready <button class="tasks__buttonshow">></button></h4>
-            <div class="tasks__list droppable" id="ready">
+            <div class="tasks__list droppable items" id="ready">
             </div>
             <div class="tasks__newtask">
               <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
@@ -36,7 +36,7 @@
         <div class="col-sm-3 col-xs-6">
           <div class="tasks editor-container">
             <h4 class="text-center ">In progress <button class="tasks__buttonshow">></button></h4>
-            <div class="tasks__list droppable" id="inprogress">
+            <div class="tasks__list droppable items" id="inprogress">
             </div>
             <div class="tasks__newtask">
               <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
@@ -47,7 +47,7 @@
         <div class="col-sm-3 col-xs-6">
           <div class="tasks editor-container">
             <h4 class="text-center ">Under review <button class="tasks__buttonshow">></button></h4>
-            <div class="tasks__list droppable" id="underreview">
+            <div class="tasks__list droppable items" id="underreview">
             </div>
             <div class="tasks__newtask">
               <button class="tasks__newtask-button" type="button" name="button">+ New Task</button>
